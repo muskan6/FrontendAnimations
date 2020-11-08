@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spinner{
+    margin-left: 10%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(4, 184, 230);
+    border-radius: 50px;
+    border-top-color: transparent;
+    animation: anim 1s linear infinite;
+}
+.spinner:nth-child(2){
+    margin-left: 30%;
+    animation-delay: 1s;
+    animation: anim 1s linear infinite alternate;
+}
+.spinner:nth-child(3){
+    margin-left: 30%;
+    animation-delay: 2s;
+    animation: anim 1s linear infinite reverse;
+}
+@keyframes anim{
+    from{}
+    to{
+        transform: rotate(360deg);
+    }
+}
