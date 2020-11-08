@@ -4,7 +4,7 @@ body{
 .container{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
 }
 .circle-container{
     margin-left: 30%;
